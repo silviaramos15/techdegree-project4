@@ -10,24 +10,42 @@
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
+    @media (min-width: $break-m) {
+      padding: 10px 30px;
+    }
   }
   
   .default {
-    background-color: #51ddfc;
+    background-color: $default;
+    &:hover {
+      background-color: $default-light;
+    }
   }
   
   .error {
-    background-color: #e4757a;
+    background-color: $error;
+    &:hover {
+      background-color: $error-light;
+    }
   }
   
   .info {
-    background-color: #927bc1;
+    background-color: $info;
+    &:hover{
+      background-color: $info-light;
+    }
   }
   
   .success {
-    background-color: #63cc82;
+    background-color: $success;
+    &:hover {
+      background-color: $success-light;
+    }
   }
   
   .warning {
-    background-color: #fd7856;
+    background-color: $warning;
+    &:hover {
+      background-color: $warning-light;
+    }
   }

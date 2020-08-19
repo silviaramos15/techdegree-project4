@@ -4,12 +4,21 @@
 
 .container {
     padding: 0 10px;
+    @media (min-width: $break-m) {
+        max-width: 1400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
   }
   
+  
   .row {
-    display: flex;
-    flex-direction: column;
+    @include flex;
     padding: 1em 10px;
+    @media (min-width: $break-m) {
+      flex-direction: row;
+    }
   }
   
   [class^=col] {
@@ -18,10 +27,17 @@
     min-height: 25px;
     padding: 10px;
     border-radius: 5px;
-  }
+    @media (min-width: $break-m) {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      align-items: center;
+  } 
+}
   
   .theme.col-1 {
     background-color: $col-1;
+    
   }
   
   

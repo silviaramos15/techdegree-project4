@@ -20,4 +20,21 @@ $col-10: #63cc82;
 $col-11: #51ddfc;
 $col-12: #80e8d1;
 
-// MEDIA QUERIES
+// BUTTONS
+$default: #51ddfc;
+$default-light: lighten($default, 10%);
+
+$error: #e4757a;
+$error-light: lighten($error, 10%);
+
+$info: #927bc1;
+$info-light: lighten($info, 10%);
+
+$success: #63cc82;
+$success-light: lighten($success, 10%);
+
+$warning: #fd7856;
+$warning-light: lighten($warning, 10%);
+
+// BREAKPOINTS
+$break-m: 768px;
